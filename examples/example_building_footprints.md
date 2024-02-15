@@ -59,6 +59,9 @@ quad_keys = list(quad_keys)
 print(f"The input area spans {len(quad_keys)} tiles: {quad_keys}")
 ```
 
+    The input area spans 1 tiles: [21230030]
+
+
 ## Step 3 - Download the building footprints for each tile that intersects our AOI and crop the results
 
 This is where most of the magic happens. We download all the building footprints for each tile that intersects our AOI, then only keep the footprints that are _contained_ by our AOI.
@@ -106,6 +109,8 @@ buildings_gdf = (
     )
 )
 ```
+
+      0%|          | 0/1 [00:00<?, ?it/s]
 
 
 ```python
